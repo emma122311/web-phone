@@ -1,5 +1,5 @@
 # web-phone
-## 網頁手機版互換圖片的CSS 
+## 1.網頁手機版互換圖片的CSS 
 ```
 <div class="modal-header web">
     <img src="/assets2/img/banner/teacher.jpg"   alt="">                           
@@ -22,4 +22,15 @@
     }
 </style>
 
+```
+## 2.手機版縮成2個
+```
+ @media (min-width: 0px) and (max-width: 576px) {
+       .col-sm-6 {
+           -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    // 當熒幕寬度小於576px 時，手機版會自動縮成2個
 ```
